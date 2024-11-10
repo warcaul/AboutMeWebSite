@@ -324,6 +324,11 @@ figure.storylineImg {
     width: 30%;
 }
 
+.storylineImg figcaption{
+    text-align: center;
+    font-size: 1em;
+}
+
 .storylineImg img {
     width: 100%;
     height: auto;
