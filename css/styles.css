@@ -1,0 +1,418 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+    font-family: Arial, sans-serif;
+    background-color: #c7f9cc;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    flex: 1;
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(to bottom, #c7f9cc, #65b69b);
+}
+
+/* main styles*/
+
+h1,
+h2,
+h4,
+h5 {
+    text-align: center;
+}
+
+h1 {
+    width: fit-content;
+    margin: 15px auto;
+    justify-content: center;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+hr {
+    border-top: double #1e5b4c 4px;
+
+}
+
+blockquote {
+    color: #386c5f;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+figcaption {
+    text-align: right;
+    font-size: smaller;
+    font-style: italic;
+}
+
+p {
+    text-align: left;
+    text-indent: 1rem;
+}
+
+table {
+    width: auto;
+    max-width: 60%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px auto;
+}
+
+tr:nth-child(2n) {
+    background-color: #d1eeab;
+}
+
+th {
+    text-align: center;
+    font-weight: bolder;
+    background-color: #528d93;
+    color: white;
+    padding: 12px;
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a {
+    color: #379683;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #207561;
+}
+
+a:active {
+    color: #1e5b4c;
+}
+
+ul,
+ol,
+dl {
+    margin: 20px auto;
+    padding-left: 2em;
+    list-style-position: inside;
+}
+
+
+ol li {
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+dl dt::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    position: relative;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+dl dd {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+
+
+/* Header + Navigation bar */
+header {
+    margin: 0;
+    padding: 20px;
+    background-color: #8fd19e;
+    height: auto;
+}
+
+header>h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: small;
+}
+
+nav {
+    padding: 10px 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Footer */
+
+footer {
+    background-color: #6c8f7b;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+}
+
+footer * {
+    font-size: small;
+    padding-left: 1em;
+    margin-left: auto;
+}
+
+
+
+/* index page styles */
+.storiesField {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.storyBox {
+    width: 25vw;
+    margin: 30px;
+    padding: 1rem;
+    background: #ffffff;
+    display: block;
+    border-radius: 15px;
+
+}
+
+.storyBox p {
+    line-height: 1.6;
+    text-indent: 1rem;
+    color: black;
+}
+
+.storyBox h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.storyBox figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+.storyline td:first-child {
+    text-align: right;
+}
+
+.storyline th:first-child {
+    text-align: right;
+}
+
+.redRow {
+    background-color: #ff9c99;
+}
+
+.musicBOx table {
+    width: auto;
+}
+
+.musicBOx tr td:first-child {
+    width: 10vw;
+}
+
+.musicBOx tr td:not(:first-child) {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.musicBOx img {
+    height: auto;
+    width: 100%;
+}
+
+/* storylinepage styles */
+
+div.storyBoxExtended {
+    background-color: #d8f9da;
+    border-radius: 15px;
+    padding: 1em;
+    margin-bottom: 2em;
+    height: max-content;
+}
+
+div.storyBoxExtended h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.storyBoxExtended p {
+    text-align: justify;
+}
+
+.storyBoxExtended h5 {
+    font-size: 1.05em;
+}
+
+div.storyBoxExtended::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.location {
+    margin: 10px;
+    float: left;
+    padding: 1em;
+    width: 30%;
+
+}
+
+.location iframe {
+    width: 100%;
+    height: auto;
+}
+
+figure.storylineImg {
+    margin: 10px;
+    float: right;
+    margin-left: 1em;
+    width: 30%;
+}
+
+.storylineImg img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hobies page styles */
+
+#inPageNav {
+    font-size: 1.5em;
+    border: #1e5b4c 3px solid;
+    width: fit-content;
+    padding: 0;
+    float: inline-start;
+}
+
+#inPageNav ol {
+    padding: 4px;
+    margin: 0;
+}
+
+img.hobbiesImg {
+    width: 30vw;
+    height: auto;
+    border: #2f4f4f 3px solid;
+    padding: 10px;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/* heroes page styles */
+
+.heroesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.heroesBox {
+    margin: 30px;
+    padding: 1rem;
+    display: block;
+    border-radius: 15px;
+    border: #1e5b4c solid 3px;
+    background-color: #d8f9da;
+    max-width: 25vw;
+    width: fit-content;
+}
+
+div.heroesBox::after {
+    clear: both;
+}
+
+.heroesBox h3 {
+    text-align: center;
+}
+
+figure.heroesIMG {
+    float: left;
+    width: 35%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.heroesIMG img {
+    width: 100%;
+    height: auto;
+    border: #2f4f4f 3px solid;
+    padding: 0;
+
+}
+
+.heroesIMG figcaption {
+    quotes: "“" "”";
+}
+
+.heroesIMG figcaption::before {
+    content: open-quote;
+}
+
+.heroesIMG figcaption::after {
+    content: close-quote;
+}
