@@ -294,10 +294,6 @@ div.storyBoxExtended p {
     text-align: justify;
 }
 
-.storyBoxExtended h5 {
-    font-size: 1.05em;
-}
-
 div.storyBoxExtended::after {
     content: "";
     display: block;
@@ -324,9 +320,9 @@ figure.storylineImg {
     width: 30%;
 }
 
-.storylineImg figcaption{
+.storylineImg figcaption {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.05em;
 }
 
 .storylineImg img {
@@ -420,4 +416,171 @@ figure.heroesIMG {
 
 .heroesIMG figcaption::after {
     content: close-quote;
+}
+
+/* Mobile version */
+@media screen and (max-width: 768px) {
+
+    /* Body */
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Main content */
+    main {
+        padding: 15px;
+    }
+
+    /* Headings */
+    h1, h2, h4, h5 {
+        font-size: 1.2em;
+    }
+
+    /* Div spacing */
+    div {
+        margin-bottom: 1.5em;
+    }
+
+    /* Blockquote */
+    blockquote {
+        font-size: 1em;
+    }
+
+    /* Paragraphs */
+    p {
+        text-align: justify;
+        text-indent: 1rem;
+        font-size: 1em;
+    }
+
+    /* Tables */
+    table {
+        width: 100%;
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    /* Navbar */
+    nav ul {
+        flex-direction: column;
+        font-size: large;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Header */
+    header {
+        padding: 15px;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Stories field */
+    .storiesField {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .storyBox {
+        width: 80%;
+        margin: 15px 0;
+        padding: 1rem;
+    }
+
+    .storyBox h4 {
+        font-size: 1.2em;
+    }
+
+    /* Storyline page */
+    div.storyBoxExtended {
+        padding: 1rem;
+        margin-bottom: 1.5em;
+    }
+
+    div.storyBoxExtended h2 {
+        font-size: 1.2em;
+    }
+
+    div.storyBoxExtended p {
+        font-size: 1em;
+    }
+
+    div.location {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    figure.storylineImg {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .storylineImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hobbies page */
+    #inPageNav {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    #inPageNav ol {
+        padding: 4px;
+        margin: 0;
+    }
+
+    img.hobbiesImg {
+        width: 80%;
+        height: auto;
+    }
+
+    .clearFloat {
+        clear: both;
+    }
+
+    .right, .left {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Heroes page */
+    .heroesContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroesBox {
+        width: 80%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    figure.heroesIMG {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .heroesIMG img {
+        width: 100%;
+        height: auto;
+    }
 }
