@@ -6,164 +6,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>My heroes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
 </head>
 
 <body>
-    <header>
-        <h3>20111631</h3>
-        <h3>Roman Aleinykov</h3>
+    <div class="ui stackable grid">
+        <header class="ui stackable grid" style="width: 100%; margin: 0;">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="storyline.html">Story line</a></li>
-                <li><a href="hobbies.html">My hobies</a></li>
-                <li><a href="heroes.html">My heroes</a></li>
-            </ul>
-
-
-        </nav>
-    </header>
-
-
-    <main>
-        <h1>People, who inspire me</h1>
-
-
-        <div class="heroesContainer">
-            <div class="heroesBox">
-                <h3> Albert Einstein</h3>
-                <hr>
-
-                <figure class="heroesIMG">
-                    <img src="images/einstein.jpg" alt="Picture of Albert Einstein">
-                    <figcaption>Father of the Theory of Relativity</figcaption>
-                </figure>
-
-                <blockquote>
-                    "Imagination is more important than knowledge. For knowledge is limited, whereas imagination
-                    embraces
-                    the entire world, stimulating progress, giving birth to evolution."
-                </blockquote>
+            <div class="ui left float segment">
+                <p>20111631</p>
+                <p>Roman Aleinykov <i class="ukraine flag"></i></p>
             </div>
 
-            <div class="heroesBox">
-                <h3>Vladimir Ivanovich Vernadsky</h3>
-                <hr>
+            <nav class="ui top attached tabular menu stackable">
+                <a class="item" href="index.html">Home</a>
+                <a class="item" href="storyline.html">Story line</a>
+                <a class="item" href="hobbies.html">My hobies</a>
+                <a class="active item" href="heroes.html">My heroes</a>
+                <a class="item" href="films.html">My choice of films</a>
+                <a class="item" href="contact.html">Contact me</a>
+            </nav>
+        </header>
 
-                <figure class="heroesIMG">
-                    <img src="images/vernadsky.jpg" alt="Picture of Vladimir Ivanovich Vernadsky">
-                    <figcaption>Father of Ukrainian Science</figcaption>
-                </figure>
 
-                <blockquote>
-                    "The biosphere is the region of transformation of cosmic energy on Earth."
-                </blockquote>
+        <main class="ui container">
+
+            <div class="column" style="width: 100%;">
+                <h1 class="ui center aligned header" style="margin: auto;">People, who inspire me</h1>
             </div>
 
-            <div class="heroesBox">
-                <h3>Sergey Korolyov</h3>
-                <hr>
+            <div class="ui equal width stackable grid">
 
-                <figure class="heroesIMG">
-                    <img src="images/korolyov.jpg" alt="Picture of Sergey Korolyov">
-                    <figcaption>The Father of the Space Race</figcaption>
-                </figure>
 
-                <blockquote>
-                    "We must go to where no one has gone before."
-                </blockquote>
+                <div class="row">
+                    <div class="heroesBox ui column">
+                        <h3> Albert Einstein</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/einstein.jpg" alt="Picture of Albert Einstein">
+                            <figcaption>Father of the Theory of Relativity</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "Imagination is more important than knowledge. For knowledge is limited, whereas imagination
+                            embraces
+                            the entire world, stimulating progress, giving birth to evolution."
+                        </blockquote>
+                    </div>
+
+                    <div class="heroesBox ui column">
+                        <h3>Vladimir Ivanovich Vernadsky</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/vernadsky.jpg"
+                                alt="Picture of Vladimir Ivanovich Vernadsky">
+                            <figcaption>Father of Ukrainian Science</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "The biosphere is the region of transformation of cosmic energy on Earth."
+                        </blockquote>
+                    </div>
+
+                    <div class="heroesBox ui column">
+                        <h3>Sergey Korolyov</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/korolyov.jpg" alt="Picture of Sergey Korolyov">
+                            <figcaption>The Father of the Space Race</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "We must go to where no one has gone before."
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heroesBox ui column">
+                        <h3>Igor Sikorsky</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/sikorsky.jpg" alt="Picture of Igor Sikorsky">
+                            <figcaption>Pioneer of Vertical Flight</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "The helicopter was the realization of a dream, the first practical aircraft that could take
+                            off
+                            and
+                            land vertically."
+                        </blockquote>
+                    </div>
+
+                    <div class="heroesBox ui column">
+                        <h3>Plato</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/Plato.jpg" alt="Picture of Plato">
+                            <figcaption>The Broad Man</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "The greatest wealth is to live content with little."
+                        </blockquote>
+                    </div>
+
+                    <div class="heroesBox ui column">
+                        <h3>Emperor Augustus</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/Augustus.jpg" alt="Picture of Emperor Augustus">
+                            <figcaption>The Architect of the Roman Empire</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "I found Rome a city of bricks and left it a city of marble."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="heroesBox ui column">
+                        <h3>René Descartes</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/descartes.jpg" alt="Picture of René Descartes">
+                            <figcaption>The Philosopher of Reason and Logic</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "Cogito, ergo sum." ("I think, therefore I am.")
+                        </blockquote>
+                    </div>
+
+                    <div class="heroesBox ui column">
+                        <h3>Friedrich Nietzsche</h3>
+                        <hr>
+
+                        <figure class="heroesIMG">
+                            <img class="ui medium image" src="images/nietzsche.jpg"
+                                alt="Picture of Friedrich Nietzsche">
+                            <figcaption>The Man Who Challenged Morality</figcaption>
+                        </figure>
+
+                        <blockquote>
+                            "God is dead. God remains dead. And we have killed him."
+                        </blockquote>
+                    </div>
+
+                </div>
+
             </div>
+        </main>
 
-            <div class="heroesBox">
-                <h3>Igor Sikorsky</h3>
-                <hr>
+        <footer>
+            <p>&copy; 2024 My Website | Designed with passion</p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Правильний CSS!" />
+                </a>
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js">
+    </script>
 
-                <figure class="heroesIMG">
-                    <img src="images/sikorsky.jpg" alt="Picture of Igor Sikorsky">
-                    <figcaption>Pioneer of Vertical Flight</figcaption>
-                </figure>
-
-                <blockquote>
-                    "The helicopter was the realization of a dream, the first practical aircraft that could take off and
-                    land vertically."
-                </blockquote>
-            </div>
-
-            <div class="heroesBox">
-                <h3>Plato</h3>
-                <hr>
-
-                <figure class="heroesIMG">
-                    <img src="images/Plato.jpg" alt="Picture of Plato">
-                    <figcaption>The Broad Man</figcaption>
-                </figure>
-
-                <blockquote>
-                    "The greatest wealth is to live content with little."
-                </blockquote>
-            </div>
-
-            <div class="heroesBox">
-                <h3>Emperor Augustus</h3>
-                <hr>
-
-                <figure class="heroesIMG">
-                    <img src="images/Augustus.jpg" alt="Picture of Emperor Augustus">
-                    <figcaption>The Architect of the Roman Empire</figcaption>
-                </figure>
-
-                <blockquote>
-                    "I found Rome a city of bricks and left it a city of marble."
-                </blockquote>
-            </div>
-
-            <div class="heroesBox">
-                <h3>René Descartes</h3>
-                <hr>
-
-                <figure class="heroesIMG">
-                    <img src="images/descartes.jpg" alt="Picture of René Descartes">
-                    <figcaption>The Philosopher of Reason and Logic</figcaption>
-                </figure>
-
-                <blockquote>
-                    "Cogito, ergo sum." ("I think, therefore I am.")
-                </blockquote>
-            </div>
-
-            <div class="heroesBox">
-                <h3>Friedrich Nietzsche</h3>
-                <hr>
-
-                <figure class="heroesIMG">
-                    <img src="images/nietzsche.jpg" alt="Picture of Friedrich Nietzsche">
-                    <figcaption>The Man Who Challenged Morality</figcaption>
-                </figure>
-
-                <blockquote>
-                    "God is dead. God remains dead. And we have killed him."
-                </blockquote>
-            </div>
-
-
-        </div>
-    </main>
-
-    <footer>
-        <p>Contacts:</p>
-        <p>Email: example@email.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>&copy; 2024 My Website | Designed with passion</p>
-        <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Правильний CSS!" />
-            </a>
-        </p>
-    </footer>
-
-    </footer>
 </body>
 
 </html>

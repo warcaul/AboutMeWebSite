@@ -11,7 +11,6 @@ body {
     padding: 0;
 }
 
-
 main {
     flex: 1;
     margin: 0;
@@ -40,7 +39,13 @@ div {
 
 hr {
     border-top: double #1e5b4c 4px;
+}
 
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
 }
 
 blockquote {
@@ -58,39 +63,6 @@ figcaption {
 p {
     text-align: left;
     text-indent: 1rem;
-}
-
-table {
-    width: auto;
-    max-width: 60%;
-    border-collapse: collapse;
-    text-align: left;
-    margin: 20px auto;
-}
-
-tr:nth-child(2n) {
-    background-color: #d1eeab;
-}
-
-th {
-    text-align: center;
-    font-weight: bolder;
-    background-color: #528d93;
-    color: white;
-    padding: 12px;
-    border: 2px solid black;
-}
-
-td {
-    padding: 10px;
-    border: 1px solid black;
-}
-
-caption {
-    caption-side: top;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px;
 }
 
 a {
@@ -163,32 +135,6 @@ header>h3 {
     font-size: small;
 }
 
-nav {
-    padding: 10px 0;
-    color: white;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    font-size: x-large;
-
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-}
-
 /* Footer */
 
 footer {
@@ -210,12 +156,6 @@ footer * {
 
 
 /* index page styles */
-.storiesField {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 div.storyBox {
     width: 25vw;
     margin: 30px;
@@ -223,7 +163,6 @@ div.storyBox {
     background: #ffffff;
     display: block;
     border-radius: 15px;
-
 }
 
 .storyBox p {
@@ -243,62 +182,12 @@ div.storyBox {
     height: auto;
 }
 
-
-.storyline td:first-child {
-    text-align: right;
-}
-
-.storyline th:first-child {
-    text-align: right;
-}
-
 .redRow {
     background-color: #ff9c99;
 }
 
-.musicBOx table {
-    width: auto;
-}
-
-.musicBOx tr td:first-child {
-    width: 10vw;
-}
-
-.musicBOx tr td:not(:first-child) {
-    text-align: center;
-    font-size: 1.3em;
-}
-
-.musicBOx img {
-    height: auto;
-    width: 100%;
-}
 
 /* storylinepage styles */
-
-div.storyBoxExtended {
-    background-color: #d8f9da;
-    border-radius: 15px;
-    padding: 1em;
-    margin-bottom: 2em;
-    height: max-content;
-}
-
-div.storyBoxExtended h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
-div.storyBoxExtended p {
-    text-align: justify;
-}
-
-div.storyBoxExtended::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 div.location {
     margin: 10px;
@@ -333,11 +222,12 @@ figure.storylineImg {
 /* Hobies page styles */
 
 #inPageNav {
+    margin-left: 1em;
     font-size: 1.5em;
     border: #1e5b4c 3px solid;
     width: fit-content;
-    padding: 0;
-    float: inline-start;
+    padding: 0.5em;
+
 }
 
 #inPageNav ol {
@@ -433,7 +323,10 @@ figure.heroesIMG {
     }
 
     /* Headings */
-    h1, h2, h4, h5 {
+    h1,
+    h2,
+    h4,
+    h5 {
         font-size: 1.2em;
     }
 
@@ -461,7 +354,8 @@ figure.heroesIMG {
         max-width: 100%;
     }
 
-    table th, table td {
+    table th,
+    table td {
         padding: 8px;
     }
 
@@ -555,7 +449,8 @@ figure.heroesIMG {
         clear: both;
     }
 
-    .right, .left {
+    .right,
+    .left {
         float: none;
         width: 100%;
         margin: 10px 0;
@@ -583,4 +478,69 @@ figure.heroesIMG {
         width: 100%;
         height: auto;
     }
+}
+
+/* Fomantic styles */
+
+nav.ui.menu {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav.ui.menu a.item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ui.table thead tr th {
+    background-color: #528d93 !important;
+    color: white !important;
+}
+
+.ui.striped.table>tr:nth-child(2n),
+.ui.striped.table tbody tr:nth-child(2n) {
+    background-color: #d1eeab !important;
+}
+
+.ui.table td img {
+    display: block !important;
+    margin-left: auto !important;
+    text-align: center !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+    border: 5px solid red;
+    background-color: #528d93 !important;
+    color: white !important;
+}
+
+.ui.segment {
+    background-color: #d8f9da !important;
+
+}
+
+.custom-flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.custom-flex-form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
 }
